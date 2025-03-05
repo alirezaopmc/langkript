@@ -2,6 +2,12 @@
 
 This application converts natural language prompts into Minecraft Skript code using LangChain and Groq's LLM. It automatically generates, deploys, and loads Skript files on your Minecraft server.
 
+## TODO
+
+- [ ] Telegram Bot
+
+Any suggestion? alirezaopmc@gmail.com
+
 ## Prerequisites
 
 - Python 3.8+
@@ -14,8 +20,8 @@ This application converts natural language prompts into Minecraft Skript code us
 
 1. Clone the repository and navigate to it:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone http://github.com/alirezaopmc/langkript
+cd langkript
 ```
 
 2. Create and activate a virtual environment:
@@ -42,19 +48,10 @@ cp .env.example .env
 
 ## Usage
 
-The main functionality is provided through the `process_prompt()` function in `src/main.py`. Here's how to use it:
+Run the application using the command:
 
-```python
-from src.main import process_prompt
-
-# Basic usage with auto-generated filename
-success = process_prompt("Create a command that gives players a diamond sword when they type /givesword")
-
-# Usage with custom filename
-success = process_prompt(
-    "Make a script that teleports players to spawn when they type /spawn",
-    filename="custom_spawn.sk"
-)
+```bash
+python -m src.main
 ```
 
 ## Environment Variables
@@ -90,4 +87,4 @@ Feel free to submit issues and pull requests.
 
 ## License
 
-[Your chosen license]
+GNU Public v3.0
