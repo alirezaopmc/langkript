@@ -1,0 +1,7 @@
+
+# Define a command to give players a diamond sword
+command /givesword:
+  # Give the player a diamond sword when they use the command
+  give player a diamond sword
+  # Send a message to the player to confirm the action
+  send "You have been given a diamond sword!" to player
